@@ -6,6 +6,10 @@
     /* overflow: hidden; */
 }
 
+body {
+    /* max-width: 1500px; */
+}
+
 .head {
     /* width: 100%; */
     /* padding: auto; */
@@ -13,6 +17,19 @@
     border: none;
     display: flex;
     justify-content: space-between;
+}
+
+.checkbtn {
+    font-size: 300px;
+    color: rgb(19, 179, 19);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
 }
 
 .logo {
@@ -47,6 +64,16 @@
     display: flex;
     justify-content: space-between;
 }
+
+/* <!-- -------------------------------------------------- -->
+    ------------------------------------------------------- */
+
+
+
+
+/* <!-- -------------------------------------------------- -->
+    ------------------------------------------------------- */
+
 
 .text {
     padding: 0 8em;
@@ -142,6 +169,7 @@
 .third {
     display: flex;
     justify-content: space-between;
+    /* width: auto; */
     padding-top: 3em;
 }
 
@@ -152,6 +180,7 @@
 .battery3 {
     padding-top: 2em;
     padding-right: 5em;
+    /* overflow: hidden; */
 }
 
 .text2 {
@@ -181,4 +210,45 @@
 
 .foottext {
     color: gray;
+}
+
+@media screen and (max-width: 900px) {
+
+    .logo {
+        padding: 1em;
+        padding-top: .01em;
+
+    }
+
+    .downloadLink {
+        display: none;
+    }
+
+    .sec, .third {
+        display: block;
+    }
+
+    .text, .text2 {
+        padding: .21em;
+        margin: 1em;
+        /* text-align: center; */
+        justify-content: center;
+    }
+
+    .download {
+        display: block;
+        margin: auto 0px;
+    }
+
+    .battery {
+        width: 80%;
+        display: block;
+        margin-left: 10%;
+        margin-right: 15%;
+    }
+
+    .battery2 {
+        padding-left: 3em;
+    overflow: hidden;
+    }
 }
